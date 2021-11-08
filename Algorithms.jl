@@ -1,5 +1,4 @@
 using Random
-using Printf
 using Plots
 
 
@@ -108,7 +107,7 @@ end
 
 function rps_dict(n::Int64)
         """
-        Gebruik dictionaries alleen om static dingen te maken, niet om telkens opnieuw te maken
+        This function is extremely slow and shouldn't be used
         """
         output = ["" for i in 1:n]
         options = ["Draw", "Player 1 wins", "Player 2 wins"]
@@ -158,7 +157,7 @@ plot(
     ylabel = "Time elapsed",
     show = true
 )
-println("Goed bezig!")
+println("Plot's coming!")
 while true
         sleep(30)
 end
